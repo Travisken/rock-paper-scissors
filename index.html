@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="loaded()">
+  <section class="parent1">
+    <nav class="nav1">
+      <img src="/images/logo.svg" alt="">
+      <div class="white">
+        <p>SCORE</p>
+        <h1 id="scores1">0</h1>
+      </div>
+    </nav>
+    <section class="sect2">
+      <img class="traingle" src="/images/bg-triangle.svg" alt="">
+      <div class="buttons">
+        <span>
+        <img id="chosen" src="/images/icon-paper.svg" alt="">
+      </span>
+      <span>
+        <img id="chosen" src="/images/icon-scissors.svg" alt="">
+      </span>
+      <span>
+        <img id="chosen" src="/images/icon-rock.svg" alt="">
+      </span>
+      </div>
+    </section>
+    <section class="rules">
+      <nav class="nav2">
+          <h1>RULES</h1>
+          <img onclick="closes()" src="/images/icon-close.svg" alt="">
+      </nav>
+      <img class="img" src="/images/image-rules.svg" alt="">
+    </section>
+    <button onclick="ruled()" class="rules-button1">RULES</button>
+  </section>
+  <script src="/script.js"></script>
+</body>
+</html>

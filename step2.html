@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="loaded()">
+  <section class="parent">
+    <nav class="nav1">
+      <img src="/images/logo.svg" alt="">
+      <div class="white">
+        <p>SCORE</p>
+        <h1 id="scores">0</h1>
+      </div>
+    </nav>
+    <section class="sect2s">
+        <ul class="UL2">
+            <li>YOU PICKED</li>
+            <li>THE HOUSE PICKED</li>
+        </ul>
+        <ul class="ul1">
+            <span id="add">
+                <img id="user" src="" alt="">
+              </span>
+              <div class="you">
+                <h1 id="results"></h1>
+                <button onclick="play()">PLAY AGAIN</button>
+              </div>
+              <span id="comp-add">
+                <img id="comp" src="" alt="">
+              </span>
+
+        </ul>              
+        <ul class="UL3">
+                <li>YOU PICKED</li>
+                <li>THE HOUSE PICKED</li>
+            </ul>
+            <div class="you2">
+                <h1 id="results">YOU LOSE</h1>
+                <button onclick="play()">PLAY AGAIN</button>
+              </div>
+    </section>
+    <section class="rules">
+      <nav class="nav2">
+          <h1>RULES</h1>
+          <img onclick="closes()" src="/images/icon-close.svg" alt="">
+      </nav>
+      <img class="img" src="/images/image-rules.svg" alt="">
+      <img onclick="closes()" class="close" src="/images/icon-close.svg" alt="">
+    </section>
+    <button onclick="ruled()" class="rules-button">RULES</button>
+  </section>
+  <script src="/script.js"></script>
+</body>
+</html>
